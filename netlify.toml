@@ -4,6 +4,11 @@
 # “command” is your build command.
 
 [build]
-  base    = ""
   publish = "/build"
-  command = "npm run start:prod"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
