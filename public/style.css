@@ -763,7 +763,7 @@ div.padding-button-modal > button:first-child {
 
 .container.page {
   background: white;
-  max-width: 700px;
+  max-width: 640px;
 }
 
 .container.page {
@@ -772,4 +772,10 @@ div.padding-button-modal > button:first-child {
 
 .container.page > div {
   margin: 20px;
+}
+
+.list {
+  width: 640px;
+  margin: 20px auto;
+  background: white;
 }
