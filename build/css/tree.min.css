@@ -1,0 +1,82 @@
+.tree-leaf {
+  position: relative;
+}
+
+.tree-leaf .tree-child-leaves {
+  display: block;
+  margin-left: 15px;
+}
+
+.tree-leaf .hidden {
+  display: none;
+}
+
+.tree-leaf .tree-expando {
+  cursor: pointer;
+  float: left;
+  height: 10px;
+  line-height: 10px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 0;
+  margin-left: -10px;
+  opacity: 1;
+  color: #989898;
+}
+#tree div, .tree div {
+  padding-left: 4px;
+}
+.tree-leaf .hidden {
+  visibility: hidden;
+}
+
+/*.tree-leaf .tree-expando:hover {*/
+  /*background: #aaa;*/
+/*}*/
+
+.tree-leaf .tree-leaf-text {
+  cursor: pointer;
+  float: left;
+  margin-left: 5px;
+}
+
+.tree-leaf .tree-leaf-text:hover {
+  color: blue;
+}
+
+.tree-leaf .tree-leaf-content:before, .tree-leaf .tree-leaf-content:after {
+  content: " ";
+  display: table;
+}
+
+.tree-leaf .tree-leaf-content:after {
+  clear: both;
+}
+
+[ext]::before {
+  width: 10px;
+  margin-left: 2px;
+  margin-right: 1px;
+  font-size: 7px;
+  position: relative;
+  display: inline-block;
+  content: ' ';
+  overflow: hidden;
+}
+
+[ext=".js"]::before {
+  content: '.js';
+}
+
+[ext="undefined"]::before {
+  content: 'fd';
+}
+
+[ext=".json"]::before {
+  content: '.json';
+}
+
+[ext=".md"]::before {
+  content: '.md';
+}

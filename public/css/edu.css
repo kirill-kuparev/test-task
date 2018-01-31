@@ -1,0 +1,32 @@
+.task-item:hover {
+  box-shadow: 2px 2px 14px 3px rgba(211, 211, 211, 0.38)
+}
+
+.fa.fa-arrows.resize {
+  float: left;
+  margin-top: 11px;
+  padding-right: 10px;
+}
+
+.task-item.add {
+  min-height: 58px;
+  border: 1px dashed #f4f4f4;
+  font-size: 25px;
+  color: grey;
+}
+
+.task-item {
+  width: 240px;
+  max-width: 100%;
+  border: 1px solid #e5e5e5;
+  transition: all .4s ease;
+  padding: 10px;
+}
+
+.branch {
+  border-bottom: 1px dashed transparent;
+}
+
+.branch.active {
+  border-bottom: 1px dashed lightgrey;
+}

@@ -1,0 +1,138 @@
+.login_img_min_height {
+    min-height: 123px;
+}
+
+.login_icon_margin_left {
+    margin-left: 8px;
+}
+
+.show_animation {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 1s linear, max-height 1s linear;
+}
+
+.hide_me {
+    opacity: 0;
+    max-height: 0;
+}
+
+.anim_show_me {
+    animation: fadeOut 1s ease;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 99em;
+        border: none;
+    }
+}
+
+@keyframes out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loading {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+.opacity-loading-td td {
+  animation: loading 1s ease forwards .3s;
+}
+.opacity-loading {
+  animation: loading 1s ease forwards .5s;
+}
+.afade-sslow {
+    animation: in 2s ease forwards!important;
+}
+.afade, .page-title h3 {
+    animation: in 1.2s ease forwards!important;
+}
+.rem.remove {
+    animation: in .6s ease forwards;
+}
+
+.rem.remove.opacity {
+    animation: out .6s ease forwards;
+}
+
+.shake-error {
+    animation: shake 1s ease;
+}
+
+.show_me {
+    opacity: 1;
+    max-height: 99em;
+    border: none;
+}
+
+.err_color {
+    color: red;
+}
+
+.disp {
+    display: none;
+}
+
+.panel-body.gray>div:nth-child(2) {
+    opacity: 0.3;
+}
+
+.panel-body>div:nth-child(2) {
+    opacity: 1;
+    transition: opacity .7s linear;
+}
+
+.photo_height {
+    min-height: 265px;
+}
+
+.frame_height {
+    min-height: 265px;
+}

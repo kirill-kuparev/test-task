@@ -1,0 +1,14 @@
+button {
+    transition: all .4s ease;
+}
+button .spin {
+    display: none;
+}
+button:disabled .non-spin {
+    display: none;
+}
+
+button:disabled .spin {
+    animation: fade .6s ease forwards;
+    display: block;
+}

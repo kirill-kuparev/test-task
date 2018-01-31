@@ -1,0 +1,81 @@
+.opa4 {
+    opacity: 0.4;
+}
+
+.loading-divs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 40%;
+}
+
+.hide {
+    display: none;
+}
+
+.black-text {
+    color: #333;
+}
+
+.future-grades {
+    min-height: 30px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.ml-3 {
+    margin-left: 3px !important;
+}
+
+.title-items {
+    max-width: 639px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.max-width-250 {
+    max-width: 250px;
+}
+
+@media (min-width: 769px) {
+    .p-12 {
+        padding: 12px !important;
+    }
+
+    .product-edit .dataTables_wrapper {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-edit .nav-tabs:before {
+        margin-left: 18px;
+    }
+}
+
+.edit.panel-heading > .icons-list > li {
+    margin-right: 10px;
+    color: #000000;
+    margin-left: 0;
+}
+
+.edit.panel-heading > .icons-list > li:last-child, .edit.panel-heading > .icons-list > li:nth-child(3) {
+    margin-right: 0;
+}

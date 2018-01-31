@@ -1,0 +1,88 @@
+.test-admin.unit-test {
+  border: 1px solid darkgreen;
+}
+.test-admin {
+  border: 1px solid #dedede;
+  margin: 15px 5px 15px 15px;
+  padding: 10px 5px 10px 10px;
+  position: relative;
+  min-height: 60px;
+}
+jstree {
+  display: block;
+}
+.test-name {
+  position: absolute;
+  font-size: 14px;
+  top: -11px;
+  left: 5px;
+  background: #f1f4f9;
+  padding: 0 0 0 10px;
+}
+
+.test-name div {
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: 3px;
+}
+/*.test-name .fa {*/
+.test-name .fa.fa-times {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  float: right;
+  /*color: grey;*/
+  /*opacity: .8;*/
+  font-size: 9px;
+  font-weight: 200;
+}
+.test-name .fa {
+  margin-right: 5px;
+  /*font-size: 8px;*/
+  /*margin: 5px 0 0 0;*/
+  /*float: right;*/
+  /*color: #919191;*/
+  /*font-size: 11px;*/
+
+}
+.step-sc-item {
+  position: relative;
+  margin-top: 30px;
+}
+.test-step {
+  margin-left: 5px;
+  padding: 13px 0;
+}
+variable .dropdown-menu:before ,variable .dropdown-menu:after{
+  right: 10px;
+  left: auto
+}
+variable .dropdown-menu {
+  right: 0;
+  min-width: 120px;
+  left: auto;
+}
+
+scenario input, .expected input {
+  max-width: 120px;
+  display: inline-block!important;
+}
+
+
+scenario input[type="number"] {
+  /*max-width: 50px;*/
+  display: inline-block;
+}
+
+scenario .btn-grey, .expected .btn-grey {
+  background: #ebebeb;
+  padding: 4px 5px 6px 5px;
+}
+scenario .btn-group>.btn:first-child {
+  margin-left: -4px;
+}
+.step-status {
+  position: absolute;
+  top: -4px;
+  left: -5px;
+}

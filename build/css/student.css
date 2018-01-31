@@ -1,0 +1,27 @@
+.navbar-multi-select {
+    height: 53px;
+}
+
+.panel-body > .dataTables_wrapper {
+    margin-top: 0;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.w-50 {
+    width: 50px;
+}
+
+.h-50 {
+    height: 50px;
+}
+
+.vert-ali-middle {
+    vertical-align: middle;
+}
+
+.p-l-10 {
+    padding-left: 10px;
+}

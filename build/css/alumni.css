@@ -1,0 +1,9 @@
+.row.hide-sep:nth-child(1) hr.separator{
+    display: none;
+}
+
+.add-agreements {
+    right: -5px;
+    top:-2px;
+    color: black;
+}
