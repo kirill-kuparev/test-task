@@ -764,5 +764,12 @@ div.padding-button-modal > button:first-child {
 .container.page {
   background: white;
   max-width: 700px;
+}
 
+.container.page {
+  padding: 0;
+}
+
+.container.page > div {
+  margin: 20px;
 }

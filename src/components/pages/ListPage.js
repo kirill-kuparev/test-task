@@ -8,7 +8,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 const styles = {
   maxWidth: '600px',
-  margin: "0 auto"
+  margin: "20px auto"
 };
 
 class ListPage extends React.Component {
@@ -59,14 +59,6 @@ class ListPage extends React.Component {
       !!data && data.length > 0 ?
       <InfiniteScroll
         style={styles}
-        pullDownToRefresh
-        pullDownToRefreshContent={
-          <h3 style={{textAlign: 'center'}}>&#8595; Pull down to refresh</h3>
-        }
-        releaseToRefreshContent={
-          <h3 style={{textAlign: 'center'}}>&#8593; Release to refresh</h3>
-        }
-        refreshFunction={() => this.getAllData(true)}
         next={() => this.loadMore()}
         hasMore={data.length < pagination.total }
         loader={<div style={{...styles, position: 'relative'}}><Loading /></div>}

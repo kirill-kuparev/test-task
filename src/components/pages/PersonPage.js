@@ -24,7 +24,7 @@ class PersonPage extends React.Component {
     let {user} = this.state;
 
     let photos = user.featured.map(item => {
-      return item.rt;
+      return item.st;
     });
     return photos;
   }
@@ -46,6 +46,7 @@ class PersonPage extends React.Component {
           <div style={{position: 'relative'}}>
             {this.renderSlider()}
           </div>
+          <hr />
           <div className="user-info">
             <div>Bio: {user.bio}</div>
             <div>Location: {user.city && `${user.city}, `} {user.country}</div>
@@ -54,7 +55,7 @@ class PersonPage extends React.Component {
             <div><a href={user.ig_url}>Instagram</a> ({user.ig_followers} followers)</div>
           </div>
         </div> : <div>
-          404 Profile is hot found
+          404 Profile is not found
         </div> }
       </div>
     );
