@@ -32,7 +32,7 @@ class PersonPage extends React.Component {
   renderSlider() {
     let images = this.getPhotos();
     return (
-      <Carousel>
+      <Carousel dynamicHeight>
         {images.map((image, key) => <div key={key}><img src={image} /></div>)}
       </Carousel>
     );
