@@ -1,7 +1,6 @@
 import React from 'react'
 import queryString from 'query-string';
 import m from './../services/m'
-import Slider from 'react-image-slider';
 import moment from 'moment';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -32,7 +31,7 @@ class PersonPage extends React.Component {
   renderSlider() {
     let images = this.getPhotos();
     return (
-      <Carousel dynamicHeight>
+      <Carousel dynamicHeight showStatus={false} showThumbs={false} infiniteLoop={true} emulateTouch={true}>
         {images.map((image, key) => <div key={key}><img src={image} /></div>)}
       </Carousel>
     );

@@ -1,17 +1,6 @@
 import React from 'react';
-import axios from 'axios';
-import domains from './../services/domains';
 import m from './../services/m';
-import Loading from './../Shared/Loading';
 import moment from 'moment';
-import InfiniteScroll from 'react-infinite-scroll-component';
-
-const styles = {
-  overflowY: "hidden",
-  maxWidth: "600px",
-  margin: "0 auto",
-  padding: "20px 0",
-};
 
 class PersonBlock extends React.Component {
   constructor(props) {
@@ -28,7 +17,6 @@ class PersonBlock extends React.Component {
     if(!item.height) {
       img.addEventListener("load", () => {
         let height = img.height;
-        console.log(height)
         item.height = height;
         m.updateItem(item);
         this.setState({height});

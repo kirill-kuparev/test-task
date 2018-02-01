@@ -4,7 +4,6 @@ import domains from './../services/domains';
 import m from './../services/m';
 import Loading from './../Shared/Loading';
 import PersonBlock from './../Shared/PersonBlock';
-import moment from 'moment';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 const styles = {
