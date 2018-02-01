@@ -1,7 +1,6 @@
 import React from 'react';
 import m from './../services/m';
 import moment from 'moment';
-import {Animated} from "react-animated-css";
 
 class PersonBlock extends React.Component {
   constructor(props) {
@@ -29,7 +28,6 @@ class PersonBlock extends React.Component {
     const {item} = this.props;
     const {height} = this.state;
     return (
-      <Animated animateOnMount={false} isVisible={true}>
       <a className="person animated fadeIn" href={`/page?_id=${item._id}`} style={{backgroundImage: `url(${item.avatar.st})`, height: `${item.height || height || 600}px`}}>
         <div className="absolute-block">
           <div className="center-block" style={{marginTop:`${(!!item.height && (item.height / 2) - 20) || (height && (height / 2) - 20) || 300}px` }}>
@@ -43,7 +41,6 @@ class PersonBlock extends React.Component {
           </div>
         </div>
       </a>
-      </Animated>
     );
   }
 }
