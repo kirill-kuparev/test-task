@@ -41,8 +41,7 @@ class PersonPage extends React.Component {
     const {user} = this.state;
     return (<div className="container page">
         {!!user._id ?
-          <Animated isVisible={true} animationOutDelay={.3} animationInDelay={.3}>
-            <div>
+            <div className="animated fadeIn" style={{animationDelay: "0.3s", pointerEvents: "all"}}>
             <div style={{position: 'relative'}}>
               {this.renderSlider()}
             </div>
@@ -72,8 +71,7 @@ class PersonPage extends React.Component {
               </div>
               }
             </div>
-          </div>
-        </Animated>: <div>
+          </div> : <div>
           404 Profile is not found
         </div> }
       </div>
