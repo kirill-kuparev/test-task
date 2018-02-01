@@ -24,6 +24,10 @@ const m = {
       }
     });
     m.cacheList();
+  },
+  getInstagramNick: (ig) => {
+    let arr = ig.split('/');
+    return arr && arr.length > 0 && arr[arr.length - 1]
   }
 };
 

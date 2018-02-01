@@ -699,12 +699,12 @@ div.padding-button-modal > button:first-child {
   height: 60px;
 }
 
-.navbar-inner > i {
-  font-size: 18px;
+.left-i {
+  font-size: 25px;
   cursor: pointer;
-  padding: 20px 5px 20px 20px;
   float: left;
-  font-weight: 100;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .navbar-inner div {
@@ -712,6 +712,10 @@ div.padding-button-modal > button:first-child {
   font-size: 32px;
   height: 60px;
   padding: 5px 0;
+}
+
+.navbar-inner div > span {
+  margin-right: 20px;
 }
 
 .img-object-slider {
@@ -761,18 +765,80 @@ div.padding-button-modal > button:first-child {
 .container.page {
   background: white;
   max-width: 640px;
+  margin-top: 0;
 }
 
 .container.page {
   padding: 0;
 }
 
-.container.page > div {
-  margin: 20px;
-}
 
 .list {
   max-width: 640px;
   margin: 20px auto;
   background: white;
+}
+
+.country-block {
+  font-size: 16px;
+  color: #000;
+  font-weight: 800;
+}
+
+.on-line {
+  color: #36b548;
+}
+
+.row-block > div {
+  display: inline;
+}
+
+.right-block {
+  float: right;
+  margin-top: -10px;
+}
+
+.right-block > div:first-child {
+  font-size: 37px;
+  width: 15px;
+  display: inline;
+  font-weight: 700;
+  color: #000;
+}
+
+.right-block > div:last-child {
+  display: inline-block;
+}
+
+.user-info {
+  color: #544b4b;
+  padding: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.instagram-block {
+  margin: 10px 0;
+  background: #b5b4b41a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.instagram-block a {
+  color: #544b4b !important;
+}
+
+ .instagram-block > div {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0 20px;
+}
+
+
+.instagram-icon {
+  font-size: 40px;
+  color: #7b7b7b;
 }

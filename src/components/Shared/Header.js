@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, withRouter} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 import m from './../services/m';
 import queryString from 'query-string';
 
@@ -25,8 +25,8 @@ class Header extends React.Component {
     return <div>
       <div className="navbar">
         <div className="navbar-inner">
-          {!!user._id && <i className="fa fa-chevron-left" aria-hidden="true" onClick={() => history.goBack()} />}
           <div>
+            {!!user._id && <span onClick={() => history.goBack()}><i className="fa fa-chevron-left left-i" aria-hidden="true" /></span>}
             <span>{!!user._id ? user.display_name : 'ALUA'}</span>
           </div>
         </div>
