@@ -17,6 +17,14 @@ const m = {
     return JSON.parse(json);
   },
   isUniq: (_id) => (listUser && listUser.length > 0 && listUser.find(user => _id === user._id )),
+  updateItem: (item) => {
+    listUser && listUser.length > 0 && listUser.forEach(user => {
+      if(item._id === user._id) {
+        user = item;
+      }
+    });
+    m.cacheList();
+  }
 };
 
 window.m = m;

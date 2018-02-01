@@ -634,16 +634,13 @@ div.padding-button-modal > button:first-child {
 
 .person {
   position: relative;
-  width: 600px;
-  height: 600px;
+  max-width: 600px;
   display: block;
   background: #5f5f82;
   text-align: center;
-}
-
-.person img {
-  height: 600px;
-  background-color: #fff;
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .center-block {
@@ -705,7 +702,7 @@ div.padding-button-modal > button:first-child {
 .navbar-inner > i {
   font-size: 18px;
   cursor: pointer;
-  padding: 20px 45px;
+  padding: 20px 5px 20px 20px;
   float: left;
   font-weight: 100;
 }
@@ -775,7 +772,7 @@ div.padding-button-modal > button:first-child {
 }
 
 .list {
-  width: 640px;
+  max-width: 640px;
   margin: 20px auto;
   background: white;
 }

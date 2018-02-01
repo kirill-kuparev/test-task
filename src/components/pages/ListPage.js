@@ -3,6 +3,7 @@ import axios from 'axios';
 import domains from './../services/domains';
 import m from './../services/m';
 import Loading from './../Shared/Loading';
+import PersonBlock from './../Shared/PersonBlock';
 import moment from 'moment';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
@@ -70,20 +71,7 @@ class ListPage extends React.Component {
               </p>
             }>
             {data.map((item, i) => (
-              <a className="person" key={`key1${i}`} href={`/page?_id=${item._id}`}>
-                <img className="img" src={item.avatar.st}/>
-                <div className="absolute-block">
-                  <div className="center-block">
-                    <span>{item.display_name}</span>
-                    <br/>
-                    <span>{item.title}</span>
-                  </div>
-                  <div className="bottom-block">
-                    <span>{item.city || item.country}</span>
-                    <span>{(item.is_online && 'Online') || moment(item.last_online).fromNow()}</span>
-                  </div>
-                </div>
-              </a>
+              <PersonBlock item={item} key={`key${i}`} />
             ))}
           </InfiniteScroll></div> : <div style={{...styles, position: 'relative'}}><Loading/></div>
     );
