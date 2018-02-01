@@ -60,14 +60,17 @@ class PersonPage extends React.Component {
               </div>
               <div>{user.is_online ? <span className="on-line">Online</span> : <span>{moment(user.last_online).fromNow()}</span>}</div>
               <div className="mt-10">{user.bio}</div>
+              {!!user.ig_url &&
               <div className="instagram-block">
-                <i className="fab fa-instagram instagram-icon" />
+                <i className="fab fa-instagram instagram-icon"/>
                 <div>
                   <span><strong>Instagram Verified</strong></span>
-                  <br />
-                  <span><a href={user.ig_url}>@{m.getInstagramNick(user.ig_url || "")}</a> ({user.ig_followers} followers)</span>
+                  <br/>
+                  <span><a href={user.ig_url}>@{m.getInstagramNick(user.ig_url || "")}</a> ({user.ig_followers}
+                    followers)</span>
                 </div>
               </div>
+              }
             </div>
           </div>
         </Animated>: <div>
