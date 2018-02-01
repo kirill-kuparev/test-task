@@ -40,7 +40,7 @@ class PersonPage extends React.Component {
     const {user} = this.state;
     return (<div className="container page">
         {!!user._id ?
-            <div className="animated fadeIn" style={{animationDelay: "0.3s", pointerEvents: "all"}}>
+            <div>
             <div style={{position: 'relative'}}>
               {this.renderSlider()}
             </div>
