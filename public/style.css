@@ -775,7 +775,7 @@ div.padding-button-modal > button:first-child {
 
 .list {
   max-width: 640px;
-  margin: 20px auto;
+  margin: 0 auto;
   background: white;
 }
 
@@ -837,8 +837,12 @@ div.padding-button-modal > button:first-child {
   margin: 0 20px;
 }
 
-
 .instagram-icon {
   font-size: 40px;
   color: #7b7b7b;
+}
+
+.page-inner {
+  background-color: white;
+  padding: 60px 0 10px !important;
 }

@@ -28,6 +28,10 @@ const m = {
   getInstagramNick: (ig) => {
     let arr = ig.split('/');
     return arr && arr.length > 0 && arr[arr.length - 1]
+  },
+  clearCache: () => {
+    listUser = [];
+    m.cacheList();
   }
 };
 

@@ -10,7 +10,6 @@ const styles = {
   overflowY: "hidden",
   maxWidth: "600px",
   margin: "0 auto",
-  padding: "20px 0",
 };
 
 class ListPage extends React.Component {
@@ -54,12 +53,32 @@ class ListPage extends React.Component {
     }), this.getAllData);
   }
 
+  refresh() {
+    m.clearCache();
+    this.setState({
+      data: [],
+      pagination: {
+        offset: 0,
+        limit: 10,
+        total: 0,
+    }});
+    this.getAllData();
+  }
+
   render() {
     const {data, pagination} = this.state;
     return (
       !!data && data.length > 0 ?
         <div className="list">
           <InfiniteScroll
+            pullDownToRefresh
+            releaseToRefreshContent={
+              <div style={{...styles, position: 'relative'}}><Loading/></div>
+            }
+            pullDownToRefreshContent={
+              <h3 style={{textAlign: 'center'}}>&#8595; Pull down to refresh</h3>
+            }
+            refreshFunction={() => this.refresh()}
             style={styles}
             next={() => this.loadMore()}
             hasMore={data.length < pagination.total}

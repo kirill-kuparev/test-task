@@ -9,10 +9,10 @@ class Loading extends React.Component {
 
   render() {
     return <div className={this.getclass()}>
-      <i className="fa fa-spinner fa-spin mr-10" />
-      <div className="ml-10 ib">
-        Loading ...
-      </div>
+      <i className="fas fa-circle-notch fa-spin" />
+      {/*<div className="ml-10 ib">*/}
+        {/*Loading ...*/}
+      {/*</div>*/}
     </div>
   }
 

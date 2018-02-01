@@ -40,7 +40,6 @@ class PersonPage extends React.Component {
 
   render() {
     const {user} = this.state;
-    console.log(m.getInstagramNick(user.ig_url || ""));
     return (<div className="container page">
         {!!user._id ? <div>
           <div style={{position: 'relative'}}>

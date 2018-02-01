@@ -21,7 +21,6 @@ class Header extends React.Component {
   render() {
     const {user} = this.state;
     const {history} = this.props;
-    console.log(this.props);
     return <div>
       <div className="navbar">
         <div className="navbar-inner">
