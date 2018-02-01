@@ -32,7 +32,7 @@ class PersonPage extends React.Component {
     let images = this.getPhotos();
     return (
       <Carousel dynamicHeight showStatus={false} showThumbs={false} infiniteLoop={true} emulateTouch={true} showArrows={false}>
-        {images.map((image, key) => <div key={key}><img src={image} /></div>)}
+        {images.map((image, key) => <div key={key}><img src={image} alt={'person'} /></div>)}
       </Carousel>
     );
   }
