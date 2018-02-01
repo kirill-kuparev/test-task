@@ -13,7 +13,7 @@ class PersonBlock extends React.Component {
 
   componentDidMount() {
     const {item} = this.props;
-    var img = new Image();
+    const img = new Image();
     img.src = item.avatar.st;
     if(!item.height) {
       img.addEventListener("load", () => {
@@ -32,7 +32,7 @@ class PersonBlock extends React.Component {
       <Animated animateOnMount={false} isVisible={true}>
       <a className="person animated fadeIn" href={`/page?_id=${item._id}`} style={{backgroundImage: `url(${item.avatar.st})`, height: `${item.height || height || 600}px`}}>
         <div className="absolute-block">
-          <div className="center-block" style={{marginTop:`${(item.height / 2) - 20 || (height / 2) - 20 || 300}px` }}>
+          <div className="center-block" style={{marginTop:`${(!!item.height && (item.height / 2) - 20) || (height && (height / 2) - 20) || 300}px` }}>
             <span>{item.display_name}</span>
             <br/>
             <span>{item.title}</span>
