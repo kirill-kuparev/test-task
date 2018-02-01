@@ -3,7 +3,6 @@ import queryString from 'query-string';
 import m from './../services/m'
 import moment from 'moment';
 import { Carousel } from 'react-responsive-carousel';
-import {Animated} from "react-animated-css";
 
 class PersonPage extends React.Component {
   constructor() {
